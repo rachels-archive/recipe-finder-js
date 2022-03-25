@@ -18,7 +18,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Search bar */
 .btn {
     font-family: inherit;
     cursor: pointer;
@@ -62,6 +61,7 @@ body {
     align-items: stretch;
 }
 
+/* Search bar */
 .search-control,
 .search-btn {
     width: 100%;
@@ -94,7 +94,6 @@ body {
 }
 
 /* Recipe display card */
-
 .meal-result {
     margin-top: 4rem;
 }
@@ -167,6 +166,7 @@ body {
     width: 100%;
 }
 
+/* Recipe modal */
 .meal-details-content {
     margin: 2rem;
 }

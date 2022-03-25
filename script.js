@@ -10,8 +10,7 @@ recipeCloseBtn.addEventListener('click', () => {
     mealDetailsContent.parentElement.classList.remove('showRecipe');
 });
 
-
-// get meal list that matches with the ingredients
+// Method that returns recipes that matches with the ingredients
 function getMealList(){
     let searchInput = document.getElementById('search-input').value.trim();
     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInput}`)
@@ -42,7 +41,7 @@ function getMealList(){
 }
 
 
-// get recipe of the meal
+// Method that returns the recipe for the ingredient
 function getMealRecipe(e){
     e.preventDefault();
     if(e.target.classList.contains('recipe-btn')){
@@ -53,7 +52,7 @@ function getMealRecipe(e){
     }
 }
 
-// create a modal
+// Method that creates a modal for the recipe
 function mealRecipeModal(meal){
     console.log(meal);
     meal = meal[0];
